@@ -11,5 +11,6 @@ class RingBuffer:
             self.size = (self.size + 1) % self.capacity
         else:
             self.storage.append(item)
+
     def get(self):
         return self.storage
